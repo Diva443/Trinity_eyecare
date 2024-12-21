@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trinity</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script src="https://code.jquery.com/jquery-2.5.1.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__data">
+          <a href="#" class="nav__logo">
+            <img src="/assets/image/logo.png" />
+          </a>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line nav__toggle-menu"></i>
+            <i class="ri-close-line nav__toggle-close"></i>
+          </div>
+        </div>
+
+        <!--=============== NAV MENU ===============-->
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <!--=============== DROPDOWN 1 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link dropdown__button">
+                About US <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <div class="dropdown__container">
+                <div class="dropdown__content">
+                  <div class="dropdown__group">
+                    <div class="dropdown__icon">
+                      <i class="ri-flashlight-line"></i>
+                    </div>
+
+                    <span class="dropdown__title">Most viewed courses</span>
+
+                    <ul class="dropdown__list">
+                      <li>
+                        <a href="#" class="dropdown__link"
+                          >HTML for beginners</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link">Advanced CSS</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link">JavaScript OOP</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown__group">
+                    <div class="dropdown__icon">
+                      <i class="ri-heart-3-line"></i>
+                    </div>
+
+                    <span class="dropdown__title">Popular courses</span>
+
+                    <ul class="dropdown__list">
+                      <li>
+                        <a href="#" class="dropdown__link"
+                          >Development with Flutter</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link"
+                          >Web development with React</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link"
+                          >Backend development expert</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown__group">
+                    <div class="dropdown__icon">
+                      <i class="ri-book-mark-line"></i>
+                    </div>
+
+                    <span class="dropdown__title">Careers</span>
+
+                    <ul class="dropdown__list">
+                      <li>
+                        <a href="#" class="dropdown__link">Web development</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link"
+                          >Applications development</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link">UI/UX design</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link"
+                          >Informatic security</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown__group">
+                    <div class="dropdown__icon">
+                      <i class="ri-file-paper-2-line"></i>
+                    </div>
+
+                    <span class="dropdown__title">Certifications</span>
+
+                    <ul class="dropdown__list">
+                      <li>
+                        <a href="#" class="dropdown__link"
+                          >Course certificates</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link"
+                          >Free certifications</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!--=============== DROPDOWN 2 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link dropdown__button">
+                Therapy <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <div class="dropdown__container">
+                <div class="dropdown__content">
+                  <div class="dropdown__group">
+                    <div class="dropdown__icon">
+                      <i class="ri-code-line"></i>
+                    </div>
+
+                    <span class="dropdown__title">Web templates</span>
+
+                    <ul class="dropdown__list">
+                      <li>
+                        <a href="#" class="dropdown__link">Free templates</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link">Premium templates</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown__group">
+                    <div class="dropdown__icon">
+                      <i class="ri-pen-nib-line"></i>
+                    </div>
+
+                    <span class="dropdown__title">Designs</span>
+
+                    <ul class="dropdown__list">
+                      <li>
+                        <a href="#" class="dropdown__link">Web designs</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link">App designs</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link">Component design</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown__group">
+                    <div class="dropdown__icon">
+                      <i class="ri-apps-2-line"></i>
+                    </div>
+
+                    <span class="dropdown__title">Others</span>
+
+                    <ul class="dropdown__list">
+                      <li>
+                        <a href="#" class="dropdown__link">Recent blogs</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link">Tutorial videos</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link">Webinar</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!--=============== DROPDOWN 3 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link dropdown__button">
+                Our Expertise
+                <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <div class="dropdown__container">
+                <div class="dropdown__content">
+                  <div class="dropdown__group">
+                    <div class="dropdown__icon">
+                      <i class="ri-community-line"></i>
+                    </div>
+
+                    <span class="dropdown__title">About us</span>
+
+                    <ul class="dropdown__list">
+                      <li>
+                        <a href="#" class="dropdown__link">About us</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link">Support</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link">Contact us</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown__group">
+                    <div class="dropdown__icon">
+                      <i class="ri-shield-line"></i>
+                    </div>
+
+                    <span class="dropdown__title">Safety and quality</span>
+
+                    <ul class="dropdown__list">
+                      <li>
+                        <a href="#" class="dropdown__link">Cookie settings</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link">Privacy Policy</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!--=============== DROPDOWN 4 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link dropdown__button">
+                Visionary Vault
+                <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <div class="dropdown__container">
+                <div class="dropdown__content">
+                  <div class="dropdown__group">
+                    <div class="dropdown__icon">
+                      <i class="ri-community-line"></i>
+                    </div>
+
+                    <span class="dropdown__title">About us</span>
+
+                    <ul class="dropdown__list">
+                      <li>
+                        <a href="#" class="dropdown__link">About us</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link">Support</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link">Contact us</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown__group">
+                    <div class="dropdown__icon">
+                      <i class="ri-shield-line"></i>
+                    </div>
+
+                    <span class="dropdown__title">Safety and quality</span>
+
+                    <ul class="dropdown__list">
+                      <li>
+                        <a href="#" class="dropdown__link">Cookie settings</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link">Privacy Policy</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!--=============== DROPDOWN 5 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link dropdown__button">
+                Products <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <div class="dropdown__container">
+                <div class="dropdown__content">
+                  <div class="dropdown__group">
+                    <div class="dropdown__icon">
+                      <i class="ri-community-line"></i>
+                    </div>
+
+                    <span class="dropdown__title">About us</span>
+
+                    <ul class="dropdown__list">
+                      <li>
+                        <a href="#" class="dropdown__link">About us</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link">Support</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link">Contact us</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown__group">
+                    <div class="dropdown__icon">
+                      <i class="ri-shield-line"></i>
+                    </div>
+
+                    <span class="dropdown__title">Safety and quality</span>
+
+                    <ul class="dropdown__list">
+                      <li>
+                        <a href="#" class="dropdown__link">Cookie settings</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link">Privacy Policy</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!--=============== DROPDOWN 6 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link dropdown__button">
+                Activities <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <div class="dropdown__container">
+                <div class="dropdown__content">
+                  <div class="dropdown__group">
+                    <div class="dropdown__icon">
+                      <i class="ri-community-line"></i>
+                    </div>
+
+                    <span class="dropdown__title">About us</span>
+
+                    <ul class="dropdown__list">
+                      <li>
+                        <a href="#" class="dropdown__link">About us</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link">Support</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link">Contact us</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown__group">
+                    <div class="dropdown__icon">
+                      <i class="ri-shield-line"></i>
+                    </div>
+
+                    <span class="dropdown__title">Safety and quality</span>
+
+                    <ul class="dropdown__list">
+                      <li>
+                        <a href="#" class="dropdown__link">Cookie settings</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link">Privacy Policy</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="hero-section">
+      <div class="hero-section-banner">
+        <!-- <div class="hero-section-elements"></div> -->
+        <div class="hero-section-appoinment container">
+          <div class="appoinment-header">
+            Vision Therapy & Contact Lens clinic
+          </div>
+          <div class="appoinment-button">Make Appoinment</div>
+        </div>
+        <div class="hero-section-doctor container">
+          <div class="doctor-cards">
+            <div class="swiper mySwiper" style="height: 410px; height: 250px">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="doctor-profile">
+                    <div class="doctor-image">
+                      <img src="/assets/image/doctorprofile.png" />
+                    </div>
+                    <div class="doctor-name">
+                      <div class="name">Dr. Sam, MD</div>
+                      <div class="profession">Specialist</div>
+                    </div>
+                  </div>
+                  <div class="schedule">
+                    <img src="/assets/icon/cuida--clock-outline.png" />
+                    <div class="schedule-time">
+                      <div class="schedule-time-start">
+                        Mon-Sat 9.30 am to 9.30pm
+                      </div>
+                      <div class="schedule-time-end">Sun-Closed</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="doctor-profile">
+                    <div class="doctor-image">
+                      <img src="/assets/image/doctorprofile.png" />
+                    </div>
+                    <div class="doctor-name">
+                      <div class="name">Dr. Sam, MD</div>
+                      <div class="profession">Specialist</div>
+                    </div>
+                  </div>
+                  <div class="schedule">
+                    <img src="/assets/icon/cuida--clock-outline.png" />
+                    <div class="schedule-time">
+                      <div class="schedule-time-start">
+                        Mon-Sat 9.30 am to 9.30pm
+                      </div>
+                      <div class="schedule-time-end">Sun-Closed</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="doctor-profile">
+                    <div class="doctor-image">
+                      <img src="/assets/image/doctorprofile.png" />
+                    </div>
+                    <div class="doctor-name">
+                      <div class="name">Dr. Sam, MD</div>
+                      <div class="profession">Specialist</div>
+                    </div>
+                  </div>
+                  <div class="schedule">
+                    <img src="/assets/icon/cuida--clock-outline.png" />
+                    <div class="schedule-time">
+                      <div class="schedule-time-start">
+                        Mon-Sat 9.30 am to 9.30pm
+                      </div>
+                      <div class="schedule-time-end">Sun-Closed</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="doctor-profile">
+                    <div class="doctor-image">
+                      <img src="/assets/image/doctorprofile.png" />
+                    </div>
+                    <div class="doctor-name">
+                      <div class="name">Dr. Sam, MD</div>
+                      <div class="profession">Specialist</div>
+                    </div>
+                  </div>
+                  <div class="schedule">
+                    <img src="/assets/icon/cuida--clock-outline.png" />
+                    <div class="schedule-time">
+                      <div class="schedule-time-start">
+                        Mon-Sat 9.30 am to 9.30pm
+                      </div>
+                      <div class="schedule-time-end">Sun-Closed</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="doctor-profile">
+                    <div class="doctor-image">
+                      <img src="/assets/image/doctorprofile.png" />
+                    </div>
+                    <div class="doctor-name">
+                      <div class="name">Dr. Sam, MD</div>
+                      <div class="profession">Specialist</div>
+                    </div>
+                  </div>
+                  <div class="schedule">
+                    <img src="/assets/icon/cuida--clock-outline.png" />
+                    <div class="schedule-time">
+                      <div class="schedule-time-start">
+                        Mon-Sat 9.30 am to 9.30pm
+                      </div>
+                      <div class="schedule-time-end">Sun-Closed</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="banner-image"></div>
+        </div>
+      </div>
+    </section>
+    <section class="About-us">
+      <div class="About-us1 container">
+        <div class="About-us-images">
+          <div class="abt-col1">
+            <div class="abt-img1"></div>
+            <div class="abt-img2"></div>
+          </div>
+          <div class="abt-col2"><div class="abt-img3"></div></div>
+        </div>
+        <div class="About-us-content">
+          <h4>About Us</h4>
+          <h1>We Provide the Best Eye Care Falicities</h1>
+          <p>
+            Our goal is to make sure you leave with a smile on your face! In
+            Trinity you'll always find friendly, professional staff that will go
+            out of their way to ensure your visit to the Optometrist is a happy
+            one!
+          </p>
+        </div>
+      </div>
+      <div class="About-us2 container"></div>
+    </section>
+    <section class="expertise">
+      <div class="expertise-elements">
+        <div class="expertise-elements-img">
+          <div class="expertise1 container">
+            <div class="expertise1-content">
+              <h1>Our Expertise</h1>
+              <p>
+                We do this through quality eye care health, quality patient care
+                and modern technology
+              </p>
+              <div class="expertise-carousal">
+                <div class="wrapper">
+                  <div class="carousel">
+                    <div class="card">
+                      <div class="expertise-icon"></div>
+                      <h2>Fully Equiped Optometry clinic</h2>
+                      <span
+                        >Etiam ac tortor id purus commodo vulputatedi Vestibulum
+                        porttitor erat felis and sedon gont vehicula tortor
+                        malesuada gravida.</span
+                      >
+                    </div>
+                    <div class="card">
+                      <h2>Trinity's Rx Lab</h2>
+                      <span
+                        >Etiam ac tortor id purus commodo vulputatedi Vestibulum
+                        porttitor erat felis and sedon gont vehicula tortor
+                        malesuada gravida.</span
+                      >
+                    </div>
+                    <div class="card">
+                      <h2>Specialized In</h2>
+                      <span
+                        >Etiam ac tortor id purus commodo vulputatedi Vestibulum
+                        porttitor erat felis and sedon gont vehicula tortor
+                        malesuada gravida.</span
+                      >
+                    </div>
+                    <div class="card">
+                      <h2>Trinity</h2>
+                      <span
+                        >Etiam ac tortor id purus commodo vulputatedi Vestibulum
+                        porttitor erat felis and sedon gont vehicula tortor
+                        malesuada gravida.</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="expertise-content">
+              <div class="expertise-content1"></div>
+            </div>
+            <div class="expertise-content2"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="teams">
+      <div class="teams-content container">
+        <h1>Expert Teams</h1>
+        <div class="team-list">
+          <div class="team-card">
+            <div class="team-img">
+              <img src="/assets/image/teamimg1.png" alt="" />
+            </div>
+            <div class="team-name">
+              <h2>Dr. Sam Sundharam</h2>
+              <p>Senior Consultant</p>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-img">
+              <img src="/assets/image/teamimg2.png" alt="" />
+            </div>
+            <div class="team-name">
+              <h2>Dr. Sam Sundharam</h2>
+              <p>Senior Consultant</p>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-img">
+              <img src="/assets/image/teamimg3.png" alt="" />
+            </div>
+            <div class="team-name">
+              <h2>Dr. Sam Sundharam</h2>
+              <p>Senior Consultant</p>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-img">
+              <img src="/assets/image/teamimg4.png" alt="" />
+            </div>
+            <div class="team-name">
+              <h2>Dr. Sam Sundharam</h2>
+              <p>Senior Consultant</p>
+            </div>
+          </div>
+        </div>
+        <div class="team-note">
+          <p>
+            A company is only as strong as the team behind it. Meet our team
+            leaders and find out why we're passionate about what we do.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="youtube">
+      <div class="youtube-content">
+        <div class="youtube-content-bg">
+          <div class="youtube-content-1 container">
+            <div class="youtube-video-container">
+              <div class="play-button"></div>
+            </div>
+            <p>
+              Trinity Optics is an expertise in Primary Eye care service. We
+              have a team of well qualified Optoms from various renowned
+              Institutions such as CMCH Vellore, Sankara Nethralaya, Sri
+              Ramachandra University, Manipal University, Flinders University
+              (Australia) and from other reputed Institutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="review">
+      <div class="review-content container">
+        <div class="review-content1">
+          <h1>Meet Out Clients</h1>
+          <div class="review-content2"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Product">
+      <div class="Product-content">
+        <div class="Product-bg">
+          <div class="product-content-items container">
+            <h1>Eye Care Products</h1>
+            <p>
+              Check out on various brands of colour contact lens like Fresh look
+              colour blends colour contact lenses and other brands.
+            </p>
+            <div class="products-slider-content">
+              <div class="product-slider owl-carousel">
+                <div class="card">
+                  <div class="img">
+                    <img src="/assets/image/productimg1.png" alt="" />
+                  </div>
+                  <div class="content">
+                    <div class="title">Briana Tozour</div>
+                    <p>Single-Vision lenses</p>
+                    <div class="price">₹ 999/-</div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img">
+                    <img src="/assets/image/productimg2.png" alt="" />
+                  </div>
+                  <div class="content">
+                    <div class="title">Pricilla Preez</div>
+
+                    <p>Single-Vision lenses</p>
+                    <div class="price">₹ 999/-</div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img">
+                    <img src="/assets/image/productimg3.png" alt="" />
+                  </div>
+                  <div class="content">
+                    <div class="title">Eliana Maia</div>
+                    <p>Single-Vision lenses</p>
+                    <div class="price">₹ 999/-</div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img">
+                    <img src="/assets/image/productimg4.png" alt="" />
+                  </div>
+                  <div class="content">
+                    <div class="title">Eliana Maia</div>
+
+                    <p>Single-Vision lenses</p>
+                    <div class="price">₹ 999/-</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Visionary-Vault">
+      <div class="Visionary-Vault-content">
+        <div class="Visionary-Vault-bg">
+          <div class="Visionary-Vault-content1 container">
+            <div class="client-count">90+ Clients</div>
+            <div class="Visionary-Vault-bg1">
+              <div class="Visionary-Vault-title">
+                <h1>Visionary Vault</h1>
+                <p>
+                  20+ Years of Enlightening Lives and Spreading Happy Smiles
+                </p>
+              </div>
+            </div>
+            <div class="Visionary-vault-clients">
+              <div class="Visionary-vault-clients1">
+                <div class="Visionary-vault-clients1-img1"></div>
+                <div class="Visionary-vault-clients1-img2"></div>
+              </div>
+              <div class="Visionary-vault-clients1">
+                <div class="Visionary-vault-clients1-img3"></div>
+                <div class="Visionary-vault-clients1-img4"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="client-banner">
+      <div class="client-banner-content container">
+        <div class="slider">
+          <div class="slide-track">
+            <div class="slide">
+              <img src="/assets/image/brandlogo1.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="/assets/image/brandlogo2.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="/assets/image/brandlogo3.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="/assets/image/brandlogo4.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="/assets/image/brandlogo5.png" alt="" />
+            </div>
+            <!-- Duplicate slides -->
+            <div class="slide">
+              <img src="/assets/image/brandlogo1.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="/assets/image/brandlogo2.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="/assets/image/brandlogo3.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="/assets/image/brandlogo4.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="/assets/image/brandlogo5.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="client-banner-footimg"></div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-content-bg">
+          <div class="footer-content1 container">
+            <div class="footer-appoinment"></div>
+            <div class="footer-appoinmet-content">
+              <div class="footer-appoinment-content-1">
+                <div class="footer-appoinment-content-11">
+                  <div class="footer-appoinment-content-icon">
+                    <img
+                      src="/assets/icon/phonepink.png"
+                      style="height: 20px; width: 20px"
+                      alt=""
+                    />
+                  </div>
+                  <div class="footer-appoinment-content-number">
+                    <h3>Give Us A Call</h3>
+                    <h2>+91 9003111863</h2>
+                  </div>
+                  <div class="footer-appoinment-content-icons">
+                    <img
+                      src="/assets/icon/fb.png"
+                      alt=""
+                      style="height: 22px; width: 20px"
+                    /><img
+                      style="height: 20px; width: 24px"
+                      src="/assets/icon/youtube.png"
+                      alt=""
+                    /><img
+                      src="/assets/icon/linkdin.png"
+                      style="height: 22px; width: 20px"
+                      alt=""
+                    /><img
+                      src="/assets/icon/skype.png"
+                      style="height: 22px; width: 22px"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="footer-appoinment-content-2">
+                <h1>Join Newsletter</h1>
+                <div class="appoinment-input"></div>
+              </div>
+            </div>
+            <div class="footer-content-info">
+              <div class="footer-content-info-col">
+                <div class="footer-content-info-col1">
+                  <img class="flogo" src="/assets/image/logo.png" alt="" />
+                  <h3>We Are Here</h3>
+                  <p>
+                    We provide many exciting services that will leave you with a
+                    bright, white smile on your face!
+                  </p>
+                </div>
+                <div class="footer-content-info-col2">
+                  <p>Helpline No: +91 9003111863</p>
+                  <p>Optom R Kumaran: +91 9382140351</p>
+                  <p>Optom K Sa: +91 9952053068</p>
+                </div>
+              </div>
+              <div class="footer-content-info-col">
+                <h3>Quick Link</h3>
+                <p>About Us</p>
+                <p>Therapy</p>
+                <p>Our Expertise</p>
+                <p>Visionary Vault</p>
+                <p>Products</p>
+                <p>Activities</p>
+              </div>
+              <div class="footer-content-info-col">
+                <div class="footer-content-info-col3">
+                  <div class="footer-icons">
+                    <img src="/assets/icon/phone.png" alt="" />
+                    <h3>More Inquiry</h3>
+                  </div>
+
+                  <p>+91 9003111863</p>
+                </div>
+                <div class="footer-content-info-col3">
+                  <div class="footer-icons">
+                    <img src="/assets/icon/mail.png" alt="" />
+                    <h3>Send Mail</h3>
+                  </div>
+                  <p>trinityoptics@yahoo.com</p>
+                </div>
+                <div class="footer-content-info-col3">
+                  <div class="footer-icons">
+                    <img src="/assets/icon/address.png" alt="" />
+                    <h3>Address</h3>
+                  </div>
+                  <p>House 168/170, Avenue 01, Mirpur DOHS, Dhaka Bangladesh</p>
+                </div>
+              </div>
+              <div class="footer-content-info-col">
+                <h3>Contact US</h3>
+                <div class="footer-content-info-contactus">
+                  <p>Porur</p>
+                  <div class="footer-content-info-porur">
+                    <p>M: 8144901861</p>
+                    <p>P: 24766164, 24763777</p>
+                  </div>
+                </div>
+                <div class="footer-content-info-contactus">
+                  <p>Porur</p>
+                  <div class="footer-content-info-Keelkattali">
+                    <p>M: 8144901862</p>
+                    <p>P: 43156689, 22470881</p>
+                  </div>
+                </div>
+                <div class="footer-content-info-contactus">
+                  <p>Porur</p>
+                  <div class="footer-content-info-kumnanchavadi">
+                    <p>M: 8144901863</p>
+                    <p>P: 26790414</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="copyright">
+              <div class="copyright-content1">
+                ©Copyright 2024 Figma | Design By CStudioss
+              </div>
+              <div class="copyright-content1">Policy . Terms & Condition</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
